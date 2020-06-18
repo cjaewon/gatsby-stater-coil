@@ -1,2 +1,2 @@
-# gatsby-stater-coil
-💡 gatsby-stater-coil :: awsome design gatsby blog template
+# gatsby-stater-database
+💡 gatsby-stater-database :: Awsome design gatsby blog / wiki / TIL template
