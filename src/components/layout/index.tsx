@@ -5,6 +5,7 @@ import Header from '../header';
 import styled from 'styled-components';
 
 import './global.css';
+import Nav from '../nav';
 
 type Layout = {
   children: React.ReactNode;
@@ -24,6 +25,7 @@ const Layout: React.FC<Layout> = ({ children }) => {
   return (
     <LayoutBlock>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Nav></Nav>
       <div className="body">
         <main>{children}</main>
         <footer>

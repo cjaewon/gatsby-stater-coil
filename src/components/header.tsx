@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Emoji from './common/Emoji';
 
 type HeaderProps = {
   siteTitle: string;
@@ -8,7 +9,8 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   return (
     <HeaderBlock>
-      📁 {siteTitle}
+      <Emoji emoji="📁" />
+      {siteTitle}
     </HeaderBlock>
   );
 }
@@ -21,7 +23,9 @@ const HeaderBlock = styled.header`
   padding-top: 0.35rem;
   padding-bottom: 0.35rem;
 
-  border-bottom: 0.25px solid #EBF8FF;
+  img.emoji {
+    margin-right: 0.25rem;
+  }
 `;
 
 export default Header;
