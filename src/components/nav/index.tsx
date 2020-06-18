@@ -37,6 +37,8 @@ const NavBlock = styled.nav`
   ul {
     margin-top: 0;
     margin-bottom: 0;
+
+    list-style-type: none;
   }
 
   img.emoji {
